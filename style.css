@@ -53,6 +53,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    opacity: 0;
+    animation: fadeInAnimation 13s forwards;
 }
 
 .data h3 {
@@ -63,7 +65,7 @@ body {
 }
 
 .progress-bar {
-    width: 50%;
+    width: 35%;
     height: 50px;
     background-color: #111; /* Light gray background */
     border-radius: 1.5em;
@@ -72,6 +74,7 @@ body {
     align-items: center; /* Vertically center the fill */
     padding-left: 0.35%;
     padding-right: 0.35%;
+    margin-top: 1%;
 }
 
 .progress-fill {
