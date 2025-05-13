@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // Event Listeners
     document.addEventListener('contextmenu', function(event){
         event.preventDefault();
-    })
+    })  
 
     // Other Stuff
     loadScript('res/app.js')
