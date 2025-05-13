@@ -42,18 +42,40 @@
 -->
 
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="message">
             <h1>GitHub@Newfies</h1>
         </div>
+        <div class="data">
+            <h3>Web Development</h3>
+            <div class="progress-bar">
+                <div class="progress-fill">
+                    <p class="progress-label" per="92" onclick="openurl('HTML')">HTML</p>
+                </div>
+            </div>
+        </div>
         <div id="particles-js"></div>
     </div>
+
+   <!-- <script>
+        function openurl(url) {
+            if (url == 'HTML') {
+                window.open("https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML&v=1829798");
+            }
+            else {
+                return console.log("Invalid")
+            }
+        }
+    </script> -->
 
     <script src="res/particles.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

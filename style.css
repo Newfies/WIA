@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+    z-index: 1;
     position: relative;
     width: 98%;
     height: 96%;
@@ -25,6 +26,7 @@ body {
 }
 
 #particles-js {
+    z-index: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,11 +37,63 @@ body {
 }
 
 .message {
+    z-index: 2;
+    position: relative;
     color: white;
     font-family: "Comfortaa";
     text-align: center;
     opacity: 0;
     animation: fadeInAnimation 5s forwards;
+}
+
+.data {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data h3 {
+    z-index: 2;
+    position: relative;
+    color: white;
+    font-family: "Comfortaa";
+}
+
+.progress-bar {
+    width: 50%;
+    height: 50px;
+    background-color: #111; /* Light gray background */
+    border-radius: 1.5em;
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertically center the fill */
+    padding-left: 0.35%;
+    padding-right: 0.35%;
+}
+
+.progress-fill {
+    height: 2.25em; /* You can adjust this height to determine how much of the progress bar is filled */
+    background-color: #444; /* Green color for the fill */
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.progress-label {
+    font-family: "Comfortaa";
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    text-align: left;
+    padding-left: 3%;
+    width: 100%;
 }
 
 @keyframes fadeInAnimation {
